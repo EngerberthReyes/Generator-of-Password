@@ -1,0 +1,115 @@
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+body {
+  background: url('../IMG/Anarcocapitalismo en Venezuela.png') center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh; /* Usando unidades vh para la altura */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  color: #ffffff;
+  font-size: 4vw; /* Usando unidades vw para el tamaño de fuente */
+}
+
+.audio {
+  position: absolute;
+  top: 11%;
+}
+
+#boton {
+  padding: 2.7vw; /* Usando unidades vw para el padding */
+}
+
+#cambioDeFormato {
+  border-radius: 2.5vw; /* Usando unidades vw para el border-radius */
+  padding: 1vw; /* Usando unidades vw para el padding */
+  color: #000000;
+  background-color: #ffffff;
+  border: .5vw solid #ffffff; /* Usando unidades vw para el border */
+  font-size: 20px; /* Usando unidades vw para el tamaño de fuente */
+  transition: background-color 300ms 100ms ease-in;
+}
+
+#cambioDeFormato:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+  transition: background-color 300ms 100ms ease-in-out;
+}
+
+#cuentaRegresiva {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 1vw; /* Usando unidades vw para el border-radius */
+  padding: 1vw; /* Usando unidades vw para el padding */
+  color: #ffffff;
+}
+
+.titulo {
+  font-size: 6.2vw; /* Usando unidades vw para el tamaño de fuente */
+  margin: 10px 0;
+  color: #ffffff;
+  display: inline-block;
+  background: #000000;
+}
+
+#contraseña {
+  color: #ffffff;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+}
+
+section {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) { 
+  /* Estilos para pantallas de menos de 1000px de ancho */
+  body {
+    font-size: 5vw;
+  }
+  
+  .titulo {
+    font-size: 8vw;
+  }
+  
+  #boton {
+    padding: 3.5vw;
+  }
+  
+  #cambioDeFormato {
+    font-size: 2vw;
+    top: 65%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) { 
+  /* Estilos para pantallas de menos de 600px de ancho */
+  body {
+    font-size: 6vw;
+  }
+  
+  .titulo {
+    font-size: 10vw;
+    top: 20%;
+  }
+  
+  .audio {
+    top: 10%;
+  }
+  
+  #boton {
+    padding: 5vw;
+  }
+  
+}
